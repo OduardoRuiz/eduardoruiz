@@ -39,6 +39,9 @@ body {
     background-color: #ddd;
     color: #333;
   }
+  main { 
+    margin: 20px;
+  }
   
   .container {
     max-width: 960px;
@@ -61,4 +64,5 @@ body {
   .project h2 {
     margin-top: 0;
   }
+  
   
