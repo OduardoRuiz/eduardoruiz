@@ -2,8 +2,21 @@
 <html>
 
 <head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
 	<meta charset="UTF-8">
-	<title>Exemplo de Menu</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -14,14 +27,24 @@
 				<li><a class="menuLink" href="index.html">Página Inicial</a></li>
 				<li><a class="menuLink" href="projetos.html">Projetos</a></li>
 			</ul>
-			<span class="target"></span>
-
 		</nav>
 	</header>
 
 	<main>
 		<h1 style="display: none;">Portifolio</h1>
-		<h2>Olá Meu nome é Eduardo Ruiz</h2>
+		<section class="textoAnimacaoSection">
+			<svg class="textoAnimacaoSvg" viewBox="0 00 400 200" xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+				<path id="path">
+					<animate attributeName="d" from="m0,110 h0" to="m0,110 h1100" dur="6.8s" begin="0s"
+						repeatCount="indefinite" />
+				</path>
+				<text font-size="26" fill='hsla(36, 10%, 85%, 1)'>
+					<textPath xlink:href="#path">
+						Olá Meu nome é Eduardo.</textPath>
+				</text>
+			</svg>
+		</section>
 		<h3>e eu Faço coisas para a web</h3>
 		<h4>Sou um desenvolvedor apaixonado por tecnologia e residente no centro de São Paulo. Com experiência em
 			Laravel, HTML e CSS, além de outras áreas como geração de leads e desenvolvimento Java, concluí com sucesso
@@ -31,7 +54,7 @@
 		<button class="botaoCv" onclick="downloadCvEnglish()">Download Resume</button>
 		<button class="botaoCv" onclick="downloadCvPortugues()">Baixar Currículo</button>
 
-	
+
 
 	</main>
 

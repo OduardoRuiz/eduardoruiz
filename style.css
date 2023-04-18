@@ -139,3 +139,21 @@
     height: 100vh;
     width: 80vh;
   }
+  body{
+    background: #000;
+    padding-top: 10px;
+  } 
+  .textoAnimacaoSection svg{
+    height: 300px;
+    
+  }
+  .textoAnimacaoSection{
+    width: 100px;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    .postsConteudo {
+      width: 100%;
+    }
+  }
