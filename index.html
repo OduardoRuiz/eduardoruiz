@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>Exemplo de Menu</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-    
+
 </head>
+
 <body>
 	<header>
 		<nav>
@@ -13,23 +15,43 @@
 				<li><a class="menuLink" href="index.html">Página Inicial</a></li>
 				<li><a class="menuLink" href="projetos.html">Projetos</a></li>
 			</ul>
-            <span class="target"></span>
+			<span class="target"></span>
 
 		</nav>
 	</header>
 
 	<main>
-		<h1>Portifolio</h1>
-		<p>Aqui você encontrará informações sobre meus projetos e trabalhos</p>
-        <button class="botaoCv" onclick="downloadCvEnglish()">Download Resume</button>
-        <button class="botaoCv" onclick="downloadCvPortugues()">Baixar Currículo</button>
+		<h1 style="display: none;">Portifolio</h1>
+		<h2>Olá Meu nome é Eduardo Ruiz</h2>
+		<h3>e eu Faço coisas para a web</h3>
+		<h4>Sou um desenvolvedor apaixonado por tecnologia e residente no centro de São Paulo. Com experiência em
+			Laravel, HTML e CSS, além de outras áreas como geração de leads e desenvolvimento Java, concluí com sucesso
+			o curso de Sistemas para Internet no SENAC.</h4>
+
+		<p>Faça o download do meu Resumo profissional</p>
+		<button class="botaoCv" onclick="downloadCvEnglish()">Download Resume</button>
+		<button class="botaoCv" onclick="downloadCvPortugues()">Baixar Currículo</button>
+
+	
 
 	</main>
 
 	<footer>
-		<p>&copy; 2023 - Todos os direitos reservados</p>
+		<div class="conteudoFooter">
+			<div class="social-icons">
+				<a href="https://www.linkedin.com/in/oduardoruiz/" target="_blank">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+				<a href="https://github.com/OduardoRuiz" target="_blank">
+					<i class="fab fa-github"></i>
+				</a>
+			</div>
+			<p>&copy; Eduardo Ruiz</p>
+
+		</div>
 	</footer>
 
 	<script src="script.js"></script>
 </body>
+
 </html>
