@@ -135,4 +135,7 @@
   .divPosts{ 
     text-align: center;
   }
- 
+  .postsConteudo{ 
+    height: 100vh;
+    width: 80vh;
+  }

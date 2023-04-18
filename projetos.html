@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,41 +25,61 @@
         <nav>
             <ul>
                 <li><a class="menuLink" href="index.html">Página Inicial</a></li>
-				<li><a class="menuLink" href="projetos.html">Projetos</a></li>           
+                <li><a class="menuLink" href="projetos.html">Projetos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <br>
-		<h1 style="display: none;">Portifolio</h1>
+        <h1 style="display: none;">Portifolio</h1>
         <section class="divPosts">
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6940395084349661184" height="1202" width="504" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>
-            <br>
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6942620320906260481" height="719" width="504" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>
-            <br>
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6953112461247922176" height="1068" width="504" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>
-
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6940395084349661184"
+                        class="postsConteudo" frameborder="0" allowfullscreen=""
+                            title="Publicação incorporada"></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6942620320906260481"
+                        class="postsConteudo" frameborder="0" allowfullscreen=""
+                            title="Publicação incorporada"></iframe>
+                    </div>
+                    <div class="carousel-item">
+                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6953112461247922176"
+                           class="postsConteudo"  frameborder="0" allowfullscreen=""
+                            title="Publicação incorporada"></iframe>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
 
-        <section class="divPosts">
-            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7032065577179394050" height="1234" width="504" frameborder="0" allowfullscreen="" title="Publicação incorporada"></iframe>        </section>
+    </main>
 
-         </main>
-
-         <footer>
-            <div class="conteudoFooter">
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/oduardoruiz/" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/OduardoRuiz" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-                <p>&copy; Eduardo Ruiz</p>
-    
+    <footer>
+        <div class="conteudoFooter">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/oduardoruiz/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/OduardoRuiz" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
-        </footer>
+            <p>&copy; Eduardo Ruiz</p>
+
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
