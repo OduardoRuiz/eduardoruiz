@@ -18,6 +18,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
@@ -25,9 +26,11 @@
 		<nav>
 			<ul>
 				<li><a class="menuLink" href="projetos.html">Projetos</a></li>/
-				<li><a class="menuLink" href="https://www.linkedin.com/in/oduardoruiz/" target="_blank">Linkedin</a></li>/
+				<li><a class="menuLink" href="https://www.linkedin.com/in/oduardoruiz/" target="_blank">Linkedin</a>
+				</li>/
 				<li><a class="menuLink" href="https://github.com/OduardoRuiz" target="_blank">Github</a></li>/
-				<li><a class="menuLink" href="https://api.whatsapp.com/message/R5XERYN6P4GOK1" target="_blank">Whatsapp</a></li>
+				<li><a class="menuLink" href="https://api.whatsapp.com/message/R5XERYN6P4GOK1"
+						target="_blank">Whatsapp</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -35,36 +38,88 @@
 	<main>
 		<h1 style="display: none;">Portifolio</h1>
 		<section class="textoHomeSection">
-			<h2 class="digitar">Olá, meu nome é Eduardo !</h2>
-			<h3 class="fontHomeSection">Sou um desenvolvedor apaixonado por tecnologia e residente no centro de São Paulo. Com experiência em
-				Laravel, HTML e CSS, além de outras áreas como geração de leads e desenvolvimento Java, concluí com sucesso
-				o curso de Sistemas para Internet no SENAC.
-			</h3>
-			<p class="fontHomeSection">Faça o download do meu Resumo profissional</p>
+			<img class="imgPerfil img-fluid" src="document/image/perfil.jpg" alt="Img Perfil">
+			<div>
+				<h2 class="digitar">Olá, meu nome é Eduardo! &#128521;</h2>
+			</div>
+			<h3 class="fontHomeSection">Criando soluções tecnológicas sob <br> medida para transformar suas ideias em
+				realidade.</h3>
+
+			<p class="tituloBotaoCV">Faça o download do meu Resumo profissional</p>
+			<button class="botaoCv" onclick="downloadCvEnglish()">Download Resume</button>
+			<button class="botaoCv" onclick="downloadCvPortugues()">Baixar Currículo</button>
+
 		</section>
-	
-		<button class="botaoCv" onclick="downloadCvEnglish()">Download Resume</button>
-		<button class="botaoCv" onclick="downloadCvPortugues()">Baixar Currículo</button>
+		<section class="cardsSection container">
+			<h2 class="fontHomeSection text-center">Conheça minhas habilidades técnicas e competências interpessoais.
+			</h2>
+			<div class="row text-center justify-content-center ">
+				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Laravel <i class="fab fa-laravel"></i></h5>
+						<p class="card-text">Utilizo Laravel na versão 10 e anteriores, para criar aplicações,
+							utilizando o framework como Api, ou blade.php</p>
+					</div>
+				</div>
+				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Javascript <i class="fab fa-js-square"></i></h5>
+						<p class="card-text">Utilizando funções javascript para facilitar o desenvolvimento de feactures
+							para o projeto em vigencia</p>
+					</div>
+				</div>
+				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Angular 8 <i class="fab fa-angular"></i></h5>
+						<p class="card-text">em conjunto com o material design, angular para consumir apis de diferentes
+							areas</p>
+					</div>
+				</div>
+				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Kotlin <i class="fab fa-android"></i></h5>
+						<p class="card-text">Desenvolvimento android mobile nativo, utilizando o android studio</p>
+					</div>
+				</div>
 
-
-
+				<!--Linha 2 -->
+				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Java 8 <i class="fab fa-java"></i></h5>
+						<p class="card-text">Conceitos basicos na linguagem java 8 utilizando spring boot e outros</p>
+					</div>
+				</div>
+				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">MySQL <i class="fas fa-database"></i></h5>
+						<p class="card-text">Para gerenciar e criar banco de dados,
+							utilizando principalmente sempre em conjunto com o Laravel</p>
+					</div>
+				</div>
+				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">HTML/CSS3 <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
+						</h5>
+						<p class="card-text">Conceitos avançados em css e Html, sempre visando a a melhor experiencia de
+							usuario e SEO da pagina web</p>
+					</div>
+				</div>
+				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
+					<div class="card-body">
+						<h5 class="card-title">Bootstrap <i class="fab fa-bootstrap"></i></h5>
+						<p class="card-text">Frameword CSS para facilitar e agilizar o desenvolvimento das paginas com
+							Responsividade para mobile</p>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<footer>
-		<div class="conteudoFooter">
-			<div class="social-icons">
-				<a href="https://www.linkedin.com/in/oduardoruiz/" target="_blank">
-					<i class="fab fa-linkedin-in"></i>
-				</a>
-				<a href="https://github.com/OduardoRuiz" target="_blank">
-					<i class="fab fa-github"></i>
-				</a>
-			</div>
-			<p>&copy; Eduardo Ruiz</p>
-
+		<div class="conteudoFooter d-flex">
+			<p class="nomeFooter">&copy; 2023 Desenvolvido por Eduardo Ruiz </p>
 		</div>
 	</footer>
-
 	<script src="script.js"></script>
 </body>
 
