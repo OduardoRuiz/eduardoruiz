@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('https://img.freepik.com/fotos-gratis/fundo-abstrato-escuro_1048-1920.jpg?w=740&t=st=1682033178~exp=1682033778~hmac=5ba5a34087f62c6da80e3d0f9a44768d2e3eb31bf2181aaf22ce10b72534ad08');
+  background-image: url('./document/image/backgroundblack.jpg');
   font-family: 'Outfit', sans-serif;
   color: #fff;
 }
@@ -162,13 +162,6 @@ footer {
   border-radius: 15px;
 }
 
-.textoInformativoCarrossel {
-  font-size: 16px;
-  color: #f7ffff;
-  text-align: center;
-
-}
-
 .tituloCarrossel {
   font-size: 22px;
   color: #f7ffff;
@@ -177,9 +170,6 @@ footer {
 }
 
 .digitar {
-  overflow: hidden;
-  /*  animation: digitar 7s steps(60, end) infinite ; adicionado "infinite" para repetir a animação indefinidamente */
-  white-space: nowrap;
   text-align: center;
   font-size: 10px;
   margin: 20px;
