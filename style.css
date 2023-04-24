@@ -103,42 +103,6 @@ footer {
 
 }
 
-.conteudoFooter p {
-  text-align: center;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 13px 21px;
-
-}
-
-.social-icons a:hover {
-  box-shadow: rgba(114, 114, 114, 0.199) 0px 8px 20px;
-  transform: translateY(-2px);
-
-}
-
-.social-icons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  margin-right: 5px;
-  border-radius: 50%;
-  background-color: #333;
-  list-style: none;
-
-}
-
-.social-icons a i {
-  color: #fff;
-  font-size: 24px;
-}
-
 .divPosts {
   text-align: center;
 }
@@ -151,9 +115,6 @@ footer {
 
 .textoAnimacaoSection svg {
   height: 300px;
-
-
-
 }
 
 .textoAnimacaoSection {
@@ -166,7 +127,6 @@ footer {
   font-size: 22px;
   color: #f7ffff;
   font-weight: bold;
-
 }
 
 .digitar {
@@ -203,33 +163,16 @@ footer {
 }
 
 
-@keyframes digitar {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
-  }
-}
 
 
 @media only screen and (max-width: 768px) {
   .postsConteudo {
     width: 100%;
   }
-
-  .textoAnimacaoSection svg {
-    height: 150px;
-
-
-  }
-
   .textoHomeSection {
     text-align: center;
 
   }
-
   .fontHomeSection {
     font-size: 18px;
   }
