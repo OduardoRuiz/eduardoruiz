@@ -6,7 +6,7 @@ document.body.appendChild(script);
 
 function downloadCvEnglish() {
   const link = document.createElement('a');
-  link.href = './document/CVEnglishN.pdf';
+  link.href = './document/CVEnglish.pdf';
   link.download = '01 - Eduardo Ruiz - English.pdf';
   link.dispatchEvent(new MouseEvent('click'));
 }
