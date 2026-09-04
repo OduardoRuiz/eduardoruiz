@@ -1,125 +1,366 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-		crossorigin="anonymous"></script>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Eduardo Ruiz</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Ruiz | Software Developer</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="bg-marfim text-grafite">
 
-<body>
-	<header>
-		<nav>
-			<ul >
-				<li><a class="menuLink" href="projetos.html">Projetos</a></li>/
-				<li><a class="menuLink" href="https://www.linkedin.com/in/oduardoruiz/" target="_blank">Linkedin</a></li>/
-				<li><a class="menuLink" href="https://github.com/OduardoRuiz" target="_blank">Github</a></li>/
-				<li><a class="menuLink" href="https://api.whatsapp.com/message/R5XERYN6P4GOK1" target="_blank">Whatsapp</a></li>
-			</ul>
-		</nav>
-	</header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold" href="#">Eduardo Ruiz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stack">Stack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<hr style="margin: 5px;">
-	<main>
-		<h1 style="display: none;">Portifolio</h1>
-		<section class="textoHomeSection">
-			<img class="imgPerfil img-fluid" src="document/image/perfil.jpg" alt="Img Perfil">
-			<div class="">
-				<h2 class="digitar">Olá, meu nome é Eduardo! &#128521;</h2>
-			</div>
-			<h3 class="fontHomeSection">Criando soluções tecnológicas sob <br> medida para transformar suas ideias em
-				realidade.</h3>
+    <!-- Hero -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-labels mb-3">
+                        <span class="badge-custom bg-grafite text-marfim">ROLE: SOFTWARE DEVELOPER</span>
+                        <span class="badge-custom bg-terracota text-marfim">FOCUS: SYSTEMS + AI</span>
+                    </div>
+                    <h1 class="display-1 fw-bold text-uppercase mb-4">Eduardo<br>Ruiz</h1>
+                    <p class="lead mb-5">Desenvolvedor Full Stack com experiência em desenvolvimento e manutenção de sistemas web, backend, APIs, bancos de dados, integrações, cloud e regras de negócio.</p>
+                    <div class="d-flex gap-3">
+                        <a href="./document/02-%20CV%20Eduardo%20Ruiz%20-%20Portugue%CC%82s.pdf" download="Eduardo_Ruiz_CV_PT.pdf" class="btn btn-primary-custom">CV Português</a>
+                        <a href="./document/02-%20Eduardo_Ruiz_EN.pdf" download="Eduardo_Ruiz_CV_EN.pdf" class="btn btn-outline-custom">Resume English</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                    <div class="profile-image-container">
+                        <img src="document/image/perfil.jpeg" alt="Eduardo Ruiz" class="profile-img">
+                        <div class="geometric-shape shape-mustard"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<p class="tituloBotaoCV">Faça o download do meu Resumo profissional</p>
-			<button class="botaoCv" onclick="downloadCvEnglish()">Download Resume</button>
-			<button class="botaoCv" onclick="downloadCvPortugues()">Baixar Currículo</button>
+    <!-- About / Narrative -->
+    <section id="about" class="py-5 bg-areia">
+        <div class="container">
+            <h2 class="section-title mb-5">About</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="fs-4 fw-light mb-4">A evolução de quem entende o negócio para quem constrói o sistema.</p>
+                    <p class="fs-5">Minha trajetória começou no atendimento corporativo e em vendas B2B, o que me deu uma base sólida para entender dores reais de negócios. Hoje, atuo como Desenvolvedor Full Stack focado em backend, bancos de dados, APIs e arquitetura cloud. Minha missão não é apenas escrever código, mas solucionar problemas complexos através de sistemas eficientes e sustentáveis.</p>
+                    <div class="badge-custom bg-petroleo text-marfim mt-3 d-inline-block p-3">
+                        <strong>AI SPECIALIZATION: 2026 — 2027</strong><br>
+                        Atualmente em especialização em Inteligência Artificial, ampliando a atuação para sistemas inteligentes, Machine Learning, Redes Neurais e Assistentes Virtuais.
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <h3 class="h5 mb-4">What I Do</h3>
+                    <ul class="list-unstyled capabilities-list">
+                        <li>Backend & Systems</li>
+                        <li>Business Rules & Logic</li>
+                        <li>Database Architecture</li>
+                        <li>APIs & Integrations</li>
+                        <li class="text-terracota fw-bold">Artificial Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		</section>
-		<hr class="mt-5 mb-3" style="margin: 5px;">
+    <!-- Experience -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5">Experience</h2>
+            
+            <!-- Highlights -->
+            <div class="experience-timeline mb-5">
+                <!-- Assectra -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 — Presente</div>
+                    <div class="timeline-content">
+                        <h3 class="h4 mb-1">Software Developer</h3>
+                        <h4 class="h6 text-terracota mb-3">Assectra Segurança do Trabalho</h4>
+                        <p>Desenvolvimento e manutenção de sistemas internos voltados à gestão de documentos, listas e controle de colaboradores e empreiteiros. Elaboração de consultas SQL otimizadas com múltiplos relacionamentos. Atuação com foco em lógica de backend e regras de negócio complexas.</p>
+                        <div class="tech-stack-mini">
+                            <span>PHP</span> <span>CodeIgniter 3</span> <span>Laravel 12</span> <span>MySQL</span> <span>AngularJS</span> <span>REST APIs</span> <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
 
-		<section class="cardsSection container">
-			<h2 class="fontHomeSection text-center">Conheça minhas habilidades técnicas e competências interpessoais.
-			</h2>
-			<div class="row text-center justify-content-center ">
-				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
-					<div class="card-body">
-						<h5 class="card-title">Laravel <i class="fab fa-laravel"></i></h5>
-						<p class="card-text">O Laravel é utilizado tanto em suas versões mais recentes quanto nas versões 10 e anteriores para criação de aplicações, aproveitando a versatilidade do framework tanto para construir APIs quanto para desenvolver interfaces por meio do Blade.php.</p>
-					</div>
-				</div>
-				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
-					<div class="card-body">
-						<h5 class="card-title">Javascript <i class="fab fa-js-square"></i></h5>
-						<p class="card-text">As funções JavaScript são utilizadas para acelerar o desenvolvimento de novas funcionalidades no projeto, trazendo benefícios como a simplificação do código e a melhoria na manutenção do sistema.</p>
-					</div>
-				</div>
-				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
-					<div class="card-body">
-						<h5 class="card-title">Angular 8 <i class="fab fa-angular"></i></h5>
-						<p class="card-text">A combinação do Material Design com o Angular para consumir APIs de diferentes áreas tem se mostrado uma abordagem eficaz para desenvolver interfaces modernas e funcionais para uma variedade de aplicações.</p>
-					</div>
-				</div>
-				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
-					<div class="card-body">
-						<h5 class="card-title">Kotlin <i class="fab fa-android"></i></h5>
-						<p class="card-text">O desenvolvimento de aplicativos móveis nativos para Android é realizado por meio do Android Studio, que oferece ferramentas e recursos para a criação de aplicativos eficientes e de alta qualidade.</p>
-					</div>
-				</div>
+                <!-- ioPay -->
+                <div class="timeline-item">
+                    <div class="timeline-date">Jun 2023 — Dez 2023</div>
+                    <div class="timeline-content">
+                        <h3 class="h4 mb-1">Desenvolvedor Full Stack</h3>
+                        <h4 class="h6 text-terracota mb-3">ioPay</h4>
+                        <p>Aplicativos web com conceitos avançados de Laravel (queues, jobs, Horizon). Consultas complexas em MySQL (triggers, procedures). Arquitetura em AWS (load balance, RDS Aurora, EC2, CodeDeploy).</p>
+                        <div class="tech-stack-mini">
+                            <span>Laravel</span> <span>PHP</span> <span>AWS</span> <span>MySQL</span> <span>jQuery</span>
+                        </div>
+                    </div>
+                </div>
 
-				<!--Linha 2 -->
-				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
-					<div class="card-body">
-						<h5 class="card-title">Java 8 <i class="fab fa-java"></i></h5>
-						<p class="card-text">Os conceitos básicos da linguagem Java 8 são explorados por meio do uso do Spring Boot e outras ferramentas, permitindo a construção de aplicações robustas e eficientes.</p>
-					</div>
-				</div>
-				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
-					<div class="card-body">
-						<h5 class="card-title">MySQL <i class="fas fa-database"></i></h5>
-						<p class="card-text">O Laravel é uma das principais ferramentas utilizadas para gerenciar e criar bancos de dados, oferecendo recursos avançados para a criação de aplicações web e facilitando o processo de desenvolvimento.</p>
-					</div>
-				</div>
-				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
-					<div class="card-body">
-						<h5 class="card-title">HTML/CSS3 <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
-						</h5>
-						<p class="card-text">São explorados conceitos avançados em CSS e HTML, sempre com foco na melhoria da experiência do usuário e na otimização para motores de busca (SEO), visando garantir uma página web eficiente e de alta qualidade.</p>
-					</div>
-				</div>
-				<div class="col-11 col-md-6 col-lg-3 m-3 card text-white bg-dark mb-3" style="max-width: 18rem;">
-					<div class="card-body">
-						<h5 class="card-title">Bootstrap <i class="fab fa-bootstrap"></i></h5>
-						<p class="card-text">O uso de um framework CSS é uma excelente forma de agilizar o desenvolvimento de páginas web, garantindo a responsividade para dispositivos móveis e facilitando a criação de layouts eficientes e modernos.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="text-center">
-			<p class="mt-5">Entre em  contato comigo</p>
-			<button class="botaoCv"><a href="mailto:carloseduardoruizs@gmail.com" style="text-decoration: none; color: white;">Enviar E-mail</a></button>
-		</section>
-	</main>
+                <!-- Potencialize -->
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2023 — Mar 2023</div>
+                    <div class="timeline-content">
+                        <h3 class="h4 mb-1">Software Developer</h3>
+                        <h4 class="h6 text-terracota mb-3">Potencialize Digital</h4>
+                        <p>Desenvolvimento de aplicações web e APIs REST aplicando conceitos de POO, princípios SOLID e metodologias ágeis (Kanban).</p>
+                    </div>
+                </div>
 
-	<footer>
-		<div class="conteudoFooter d-flex">
-			<p class="nomeFooter">&copy; 2023 Desenvolvido por Eduardo Ruiz </p>
-		</div>
-	</footer>
-	<script src="script.js"></script>
+                <!-- Senac -->
+                <div class="timeline-item">
+                    <div class="timeline-date">Dez 2021 — Jun 2022</div>
+                    <div class="timeline-content">
+                        <h3 class="h4 mb-1">Desenvolvedor Full Stack</h3>
+                        <h4 class="h6 text-terracota mb-3">Senac São Paulo</h4>
+                        <p>Sustentação de aplicações web com tecnologias front-end e back-end (Angular, Java e Spring Boot). Resolução de chamados e práticas em metodologias ágeis (Scrum, Kanban).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Previous Roles (Compact) -->
+            <h3 class="h5 mb-4 mt-5">Previous Roles & Business Trajectory</h3>
+            <div class="row g-4 compact-experience">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 bg-areia border-0 p-3">
+                        <span class="small fw-bold">2021</span>
+                        <h5 class="h6 mt-2 mb-1">Desenvolvedor de E-mail Marketing</h5>
+                        <p class="small text-muted mb-0">All In Marketing Cloud</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 bg-areia border-0 p-3">
+                        <span class="small fw-bold">2019 — 2021</span>
+                        <h5 class="h6 mt-2 mb-1">Vendedor B2B</h5>
+                        <p class="small text-muted mb-0">Frigelar</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 bg-areia border-0 p-3">
+                        <span class="small fw-bold">2014 — 2019</span>
+                        <h5 class="h6 mt-2 mb-1">Vendedor B2B2C</h5>
+                        <p class="small text-muted mb-0">Nelcar</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 bg-areia border-0 p-3">
+                        <span class="small fw-bold">2013</span>
+                        <h5 class="h6 mt-2 mb-1">Trainee / Estágio</h5>
+                        <p class="small text-muted mb-0">CPTM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-5 bg-grafite text-marfim">
+        <div class="container">
+            <h2 class="section-title text-marfim mb-5">Education</h2>
+            
+            <div class="row">
+                <!-- AI Highlight -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="ai-education-card p-4 border border-terracota border-2">
+                        <span class="badge bg-mostarda text-grafite mb-3">CURRENTLY EXPLORING</span>
+                        <h3 class="display-6 fw-bold text-terracota mb-2">Artificial Intelligence</h3>
+                        <h4 class="h5 mb-4">Pós-Graduação Lato Sensu</h4>
+                        <p class="mb-4">Centro Universitário Senac</p>
+                        <p class="fs-5 fw-bold mb-0">Ago 2026 — Ago 2027</p>
+                    </div>
+                </div>
+                
+                <!-- Other Education -->
+                <div class="col-lg-6">
+                    <div class="mb-4">
+                        <h4 class="h5">Sistemas para Internet</h4>
+                        <p class="mb-1">Centro Universitário Senac</p>
+                        <p class="text-muted small">Fev 2020 — Jun 2022 (Concluído)</p>
+                    </div>
+                    <div class="mb-5">
+                        <h4 class="h5">Técnico em Radiologia Médica</h4>
+                        <p class="mb-1">Universidade Sant'Anna</p>
+                        <p class="text-muted small">Fev 2015 — Jun 2017</p>
+                    </div>
+                    
+                    <h4 class="h6 text-uppercase text-mostarda mb-3">Certifications</h4>
+                    <ul class="list-unstyled small d-flex flex-wrap gap-3">
+                        <li>• Java (SENAI)</li>
+                        <li>• Android / Kotlin (MadCode)</li>
+                        <li>• UI/UX (MadCode)</li>
+                        <li>• English for Devs (MadCode)</li>
+                        <li>• Eletrônica / Hardware (SENAI)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5">Stack</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="stack-category p-4 bg-areia h-100 border-top border-terracota border-3">
+                        <h3 class="h5 mb-4 text-terracota">Currently Exploring (AI)</h3>
+                        <ul class="list-unstyled">
+                            <li>Artificial Intelligence</li>
+                            <li>Machine Learning</li>
+                            <li>Neural Networks</li>
+                            <li>Virtual Assistants</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="stack-category p-4 bg-areia h-100 border-top border-petroleo border-3">
+                        <h3 class="h5 mb-4 text-petroleo">Backend</h3>
+                        <ul class="list-unstyled">
+                            <li>PHP (Laravel 12, CodeIgniter 3)</li>
+                            <li>Java (Spring Boot)</li>
+                            <li>REST APIs</li>
+                            <li>POO, SOLID, Design Patterns</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="stack-category p-4 bg-areia h-100 border-top border-grafite border-3">
+                        <h3 class="h5 mb-4">Database</h3>
+                        <ul class="list-unstyled">
+                            <li>MySQL / MariaDB</li>
+                            <li>Relational Architecture</li>
+                            <li>Redis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="stack-category p-4 bg-areia h-100 border-top border-grafite border-3">
+                        <h3 class="h5 mb-4">Frontend</h3>
+                        <ul class="list-unstyled">
+                            <li>JavaScript (ES6+)</li>
+                            <li>Angular / AngularJS</li>
+                            <li>jQuery</li>
+                            <li>HTML5, CSS3, Bootstrap 5</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="stack-category p-4 bg-areia h-100 border-top border-mostarda border-3">
+                        <h3 class="h5 mb-4">Cloud & Architecture</h3>
+                        <ul class="list-unstyled">
+                            <li>AWS (EC2, RDS Aurora, Load Balance)</li>
+                            <li>Docker</li>
+                            <li>Queues, Jobs, Horizon</li>
+                            <li>Metodologias Ágeis (Scrum, Kanban)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-5 bg-areia">
+        <div class="container">
+            <h2 class="section-title mb-5">Projects</h2>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-marfim project-card shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="h4 mb-3">Pet Miau</h3>
+                            <p class="mb-4">Desenvolvimento do backend utilizando Laravel. Implementação de regras de negócio em PHP e estruturação do banco de dados MySQL.</p>
+                            <a href="projetos.html" class="btn btn-outline-custom w-100">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-marfim project-card shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="h4 mb-3">Monitorador de Preço</h3>
+                            <p class="mb-5">Sistema automatizado para monitorar valores, notificando usuários via cron jobs. Utiliza PHP e JavaScript.</p>
+                            <a href="projetos.html" class="btn btn-outline-custom w-100">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-marfim project-card shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="h4 mb-3">Sistema de ERP</h3>
+                            <p class="mb-4">Desenvolvimento de módulos de ERP focados em performance, integração de banco de dados (MySQL) e regras de negócio com CodeIgniter.</p>
+                            <a href="projetos.html" class="btn btn-outline-custom w-100">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-areia border-top border-grafite border-2">
+        <div class="container">
+            <h2 class="section-title mb-5">Contact</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h3 class="display-5 fw-bold mb-4">Let's build<br>something.</h3>
+                    <p class="fs-5 mb-0" style="max-width: 400px;">Estou disponível para novos desafios, desenvolvimento de sistemas e arquitetura corporativa.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column gap-3 contact-links">
+                        <a href="https://github.com/OduardoRuiz" target="_blank" class="d-flex justify-content-between align-items-center text-grafite text-decoration-none border-bottom border-grafite pb-3 fs-5">
+                            <span class="fw-bold">GitHub</span>
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/oduardoruiz/" target="_blank" class="d-flex justify-content-between align-items-center text-grafite text-decoration-none border-bottom border-grafite pb-3 fs-5">
+                            <span class="fw-bold">LinkedIn</span>
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:carloseduardoruizs@gmail.com" class="d-flex justify-content-between align-items-center text-grafite text-decoration-none border-bottom border-grafite pb-3 fs-5">
+                            <span class="fw-bold">E-mail</span>
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <a href="https://wa.me/5511968326278" target="_blank" class="d-flex justify-content-between align-items-center text-grafite text-decoration-none border-bottom border-grafite pb-3 fs-5">
+                            <span class="fw-bold">WhatsApp</span>
+                            <i data-lucide="message-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-grafite text-marfim text-center">
+        <div class="container">
+            <p class="mb-0 small" style="font-family: var(--font-mono);">© <span id="current-year"></span> EDUARDO RUIZ | SOFTWARE DEVELOPER</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
