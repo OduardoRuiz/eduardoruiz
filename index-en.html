@@ -19,9 +19,19 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand text-uppercase fw-bold" href="index-en.html">Eduardo Ruiz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i data-lucide="menu"></i>
-            </button>
+            
+            <div class="d-flex align-items-center gap-3 ms-auto order-lg-last border-start border-grafite ps-3 ms-lg-3">
+                <div class="d-flex align-items-center gap-2">
+                    <a href="index.html" class="text-decoration-none fs-5" style="opacity: 0.5; filter: grayscale(100%); transition: 0.3s;" onmouseover="this.style.filter='none'; this.style.opacity='1'" onmouseout="this.style.filter='grayscale(100%)'; this.style.opacity='0.5'" title="Português">🇧🇷</a>
+                    <span class="text-muted">|</span>
+                    <a href="index-en.html" class="text-decoration-none fs-5" style="opacity: 1;" title="English">🇬🇧</a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-lg-center">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -29,13 +39,6 @@
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#stack">Stacks</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    
-                    <!-- Language Switcher -->
-                    <li class="nav-item ms-lg-3 ps-lg-3 border-start border-grafite mt-3 mt-lg-0 d-flex align-items-center gap-2">
-                        <a href="index.html" class="text-decoration-none fs-5" style="opacity: 0.5; filter: grayscale(100%); transition: 0.3s;" onmouseover="this.style.filter='none'; this.style.opacity='1'" onmouseout="this.style.filter='grayscale(100%)'; this.style.opacity='0.5'" title="Português">🇧🇷</a>
-                        <span class="text-muted">|</span>
-                        <a href="index-en.html" class="text-decoration-none fs-5" style="opacity: 1;" title="English">🇬🇧</a>
-                    </li>
                 </ul>
             </div>
         </div>
