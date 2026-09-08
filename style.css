@@ -207,3 +207,154 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .section-title {
   color: var(--color-terracota) !important;
   border-bottom-color: var(--color-terracota) !important;
 }
+
+/* --- NOVO: BAUHAUS PROJECTS & CONTACT --- */
+.border-marfim { border-color: var(--color-marfim) !important; }
+
+/* Projects Bauhaus Redesign */
+.bauhaus-card {
+    position: relative;
+    background-color: var(--color-marfim);
+    border: 2px solid var(--color-grafite);
+    padding: 2.5rem 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    z-index: 1;
+    overflow: hidden;
+}
+.bauhaus-card:hover {
+    transform: translate(-8px, -8px);
+}
+/* Specific Card Identities */
+.card-terracota { box-shadow: 8px 8px 0 var(--color-grafite); }
+.card-terracota:hover { box-shadow: 16px 16px 0 var(--color-terracota); border-color: var(--color-terracota); }
+.card-terracota .card-accent { background-color: var(--color-terracota); }
+
+.card-mostarda { box-shadow: 8px 8px 0 var(--color-grafite); }
+.card-mostarda:hover { box-shadow: 16px 16px 0 var(--color-mostarda); border-color: var(--color-mostarda); }
+.card-mostarda .card-accent { background-color: var(--color-mostarda); }
+
+.card-petroleo { box-shadow: 8px 8px 0 var(--color-grafite); }
+.card-petroleo:hover { box-shadow: 16px 16px 0 var(--color-petroleo); border-color: var(--color-petroleo); }
+.card-petroleo .card-accent { background-color: var(--color-petroleo); }
+
+.card-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+.bauhaus-card:hover .card-accent {
+    width: 12px;
+}
+.card-geo-circle {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    opacity: 0.1;
+    z-index: -1;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.bauhaus-card:hover .card-geo-circle {
+    transform: scale(1.3);
+    opacity: 0.2;
+}
+.card-terracota .card-geo-circle { background-color: var(--color-terracota); }
+.card-mostarda .card-geo-circle { background-color: var(--color-mostarda); }
+.card-petroleo .card-geo-circle { background-color: var(--color-petroleo); }
+
+/* Contact Bauhaus Redesign */
+.contact-bauhaus {
+    background-color: var(--color-petroleo);
+    color: var(--color-marfim);
+    position: relative;
+    overflow: hidden;
+}
+.contact-geo-1 {
+    position: absolute;
+    bottom: -15%;
+    right: -10%;
+    width: 50vw;
+    height: 50vw;
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 50%;
+    background-color: var(--color-terracota);
+    z-index: 0;
+    opacity: 0.9;
+}
+.contact-geo-2 {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 15vw;
+    max-width: 200px;
+    height: 100%;
+    background-color: var(--color-mostarda);
+    z-index: 0;
+    opacity: 0.8;
+}
+.contact-geo-3 {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    width: 120px;
+    height: 12px;
+    background-color: var(--color-areia);
+    z-index: 0;
+}
+.contact-geo-4 {
+    position: absolute;
+    bottom: 20%;
+    left: -20px;
+    width: 150px;
+    height: 150px;
+    border: 15px solid var(--color-marfim);
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.2;
+}
+.contact-content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+.contact-title {
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    color: var(--color-marfim);
+    text-shadow: 4px 4px 0 var(--color-grafite);
+}
+.bauhaus-link-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-marfim);
+    color: var(--color-grafite);
+    padding: 1.25rem 2rem;
+    text-decoration: none;
+    border: 2px solid var(--color-grafite);
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 6px 6px 0 var(--color-grafite);
+}
+.bauhaus-link-block:hover {
+    background-color: var(--color-mostarda);
+    color: var(--color-grafite);
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0 var(--color-grafite);
+}
+.bauhaus-link-block.link-alt:hover {
+    background-color: var(--color-terracota);
+    color: var(--color-marfim);
+}
